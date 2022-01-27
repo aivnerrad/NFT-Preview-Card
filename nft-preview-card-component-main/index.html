@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+      background-color: #0D1A2D;
+      height: 100vh;
+      font-family: 'Abel', sans-serif;
+    }
+    #crust{
+      background-color: #0C192C;
+      width: 350px;
+      height: 550px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+    }
+    #mantle{
+      height: 90%;
+      width: 80%;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+    }
+    #core{
+      background-color: #15273F;
+      width: 70%;
+      height: 80%;
+      position: relative;
+      top: -10px;
+      border-radius: 10px;
+      box-shadow: 0px 10px 30px #0C1729;
+    }
+    #nft-photo{
+      height: 200px;
+      width: auto;
+      background-size: cover;
+      background-position: center;
+      border-radius: 5px;
+      margin: 15px;
+    }
+    #nft-text{
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-evenly;
+      flex-direction: column;
+      margin: 10px;
+      height: 25%;
+      border-bottom: 1px solid #1D2F47;
+      margin-left: 15px;
+    }
+    #title-text{
+      font-size: 18px;
+      font-weight: 600;
+      color: #E1ECF3;
+    }
+    #description-text{
+      color: #4D5F7A;
+    }
+    #price-and-days-container{
+      display: flex;
+      justify-content: space-evenly;
+    }
+    #eth-icon{
+      height: 18px;
+      width: 11px;
+    }
+    #price-text{
+      font-weight: 600;
+      color: #2DA5AC;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div id="crust">
+      <div id="core">
+        <div id="nft-photo" style="background-image: url(./images/image-equilibrium.jpg) ;"></div>
+        <div id="nft-text">
+          <div id="nft-title">
+            <span id="title-text">Equilibrium #3429</span>
+          </div>
+          <div id="nft-description">
+            <span id="description-text">Our Equilibrium collection promotes balance and calm.</span>
+          </div>
+        </div>
+        <div id="price-and-days-container">
+          <div id="nft-price"><div id="eth-icon" style="background-image: url(./images/icon-ethereum.svg);">
+          </div><span id="price-text">0.041 ETH</span></div>
+          <div id="nft-days"><span id="time-text">3 days left</span></div>
+        </div>
+        <div id="nft-author"><span id="author-text">Creation of Jules Wyvern</span></div>
+      </div>
+  </div>
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Darren Via II</a>.
+  </div>
+</body>
+</html>
