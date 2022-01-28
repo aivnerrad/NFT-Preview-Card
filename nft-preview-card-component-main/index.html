@@ -46,6 +46,7 @@
       top: -10px;
       border-radius: 10px;
       box-shadow: 0px 10px 30px #0C1729;
+
     }
     #nft-photo{
       height: 200px;
@@ -55,14 +56,20 @@
       border-radius: 5px;
       margin: 15px;
     }
+    #nft-info{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+      height: 45%;
+    }
     #nft-text{
       display: flex;
       align-items: flex-start;
-      justify-content: space-evenly;
+      justify-content: space-between;
       flex-direction: column;
       margin: 10px;
-      height: 25%;
-      border-bottom: 1px solid #1D2F47;
+      height: 45%;
       margin-left: 15px;
     }
     #title-text{
@@ -72,10 +79,21 @@
     }
     #description-text{
       color: #4D5F7A;
+      font-weight: 300;
     }
     #price-and-days-container{
       display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #1D2F47;
+      width: 80%;
+      padding: 10px;
+    }
+    #nft-price{
+      display: flex;
+      align-items: flex-start;
       justify-content: space-evenly;
+      width: 45%;
+      margin-left: -10px;
     }
     #eth-icon{
       height: 18px;
@@ -85,6 +103,30 @@
       font-weight: 600;
       color: #2DA5AC;
     }
+    #time-text{
+      color: #647792;
+    }
+    #nft-author{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 80%;
+    }
+    #author-photo{
+      height: 30px;
+      width: 30px;
+      background-position: center;
+      background-size: contain;
+      border-radius: 50%;
+      border: 2px solid #535960;
+    }
+    #author-text{
+      color:#647792;
+    }
+    #author-name{
+      font-weight: 600;
+      color: #7E8B9C;
+    }
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
@@ -93,20 +135,26 @@
   <div id="crust">
       <div id="core">
         <div id="nft-photo" style="background-image: url(./images/image-equilibrium.jpg) ;"></div>
-        <div id="nft-text">
-          <div id="nft-title">
-            <span id="title-text">Equilibrium #3429</span>
+        <div id="nft-info">
+          <div id="nft-text">
+            <div id="nft-title">
+              <span id="title-text">Equilibrium #3429</span>
+            </div>
+            <div id="nft-description">
+              <span id="description-text">Our Equilibrium collection promotes balance and calm.</span>
+            </div>
           </div>
-          <div id="nft-description">
-            <span id="description-text">Our Equilibrium collection promotes balance and calm.</span>
+          <div id="price-and-days-container">
+            <div id="nft-price">
+              <div id="eth-icon" style="background-image: url(./images/icon-ethereum.svg);"></div>
+              <span id="price-text">0.041 ETH</span></div>
+            <div id="nft-days"><span id="time-text">3 days left</span></div>
+          </div>
+          <div id="nft-author">
+            <div id="author-photo" style="background-image: url(./images/image-avatar.png);"></div>
+            <span id="author-text">Creation of </span><span id="author-name">Jules Wyvern</span>
           </div>
         </div>
-        <div id="price-and-days-container">
-          <div id="nft-price"><div id="eth-icon" style="background-image: url(./images/icon-ethereum.svg);">
-          </div><span id="price-text">0.041 ETH</span></div>
-          <div id="nft-days"><span id="time-text">3 days left</span></div>
-        </div>
-        <div id="nft-author"><span id="author-text">Creation of Jules Wyvern</span></div>
       </div>
   </div>
 
