@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
   <title>Frontend Mentor | NFT preview card component</title>
   <style>
     body{
@@ -18,7 +18,8 @@
       background-color: #0D1A2D;
       min-height: 100vh;
       max-width: 100%;
-      font-family: 'Abel', sans-serif;
+      font-family: "Outfit", sans-serif;
+      font-size: 1.1em;
     }
     .crust{
       background-color: #0C192C;
@@ -69,17 +70,14 @@
       align-items: center;
       justify-content: space-evenly;
       flex-direction: column;
-      min-height: 45%;
     }
     .nft-text{
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
       flex-direction: column;
-      height: 45%;
     }
     .title-text{
-      font-size: 1.1em;
       font-weight: 600;
       color: #E1ECF3;
       margin-left: .75em;
@@ -89,13 +87,15 @@
       cursor: pointer;
     }
     .description-text{
-      color: #4D5F7A;
+      color: #7186A4;
       font-weight: 300;
       margin: 1em .75em 0 .75em;
+      font-size: .85em;
     }
     .price-and-days-container{
       display: flex;
       justify-content: space-between;
+      align-items: center;
       border-bottom: 1px solid #1D2F47;
       width: 90%;
       margin: .75em;
@@ -115,6 +115,7 @@
     }
     .price-text{
       font-weight: 600;
+      font-size: .9em;
       color: rgb(0,255,255);
     }
     .time-text{
@@ -134,10 +135,10 @@
       background-position: center;
       background-size: contain;
       border-radius: 50%;
-      border: 2px solid #535960;
+      border: 2px solid #8f97a0;
     }
     .author-text{
-      color:#647792;
+      color: #7186A4;
     }
     .author-name{
       font-weight: 600;
@@ -147,8 +148,13 @@
       color:rgb(0, 255, 255);
       cursor: pointer;
     }
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+     }
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+     }
   </style>
 </head>
 <body>
@@ -168,7 +174,7 @@
               <div class="nft-price">
                 <div class="eth-icon" style="background-image: url(./images/icon-ethereum.svg);"></div>
                 <span class="price-text">0.041 ETH</span></div>
-              <div class="nft-days"><span class="time-text">3 days left</span></div>
+              <div class="nft-days"><div class="clock-icon" style="background-image: url(./images/icon-clock.svg);"></div><span class="time-text">3 days left</span></div>
             </div>
             <div class="nft-author">
               <div class="author-photo" style="background-image: url(./images/image-avatar.png);"></div>
